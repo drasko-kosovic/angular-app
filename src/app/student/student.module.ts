@@ -10,7 +10,7 @@ import {HttpClientModule} from "@angular/common/http";
 @NgModule({
   declarations: [StudentListComponent, StudentDetailComponent],
   exports: [
-    StudentListComponent
+    StudentListComponent,StudentDetailComponent
   ],
   imports: [
     CommonModule,
