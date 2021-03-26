@@ -23,4 +23,13 @@ export class StudentService {
   delete(id: number): Observable<HttpResponse<{}>> {
     return this.http.delete(`${this.resourceUrl}/${id}`, { observe: 'response' });
   }
+  create(student: IStudent): Observable<EntityResponseType> {
+    return this.http.post<IStudent>(this.resourceUrl, student, { observe: 'response' });
+  }
+  update(student: IStudent): Observable<EntityResponseType> {
+    return this.http.put<IStudent>(this.resourceUrl, student, { observe: 'response' });
+  }
+  find(id: number): Observable<EntityResponseType> {
+    return this.http.get<IStudent>(`${this.resourceUrl}/${id}`, { observe: 'response' });
+  }
 }
