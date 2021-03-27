@@ -1,23 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-primary">
-  <a class="navbar-brand" href="#"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" id="text" routerLink="" routerLinkActive="true">Home<span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link active" routerLink="student" routerLinkActive="true">Student<span class="sr-only">(current)</span></a>
+<!--<div>-->
+<!--  <router-outlet name="navbar"></router-outlet>-->
+<!--</div>-->
+<div>
+  <app-navbar></app-navbar>
+</div>
 
-    </div>
 
+<div class="container-fluid">
+  <div class="card jh-card">
+    <router-outlet></router-outlet>
   </div>
 
-</nav>
-<router-outlet></router-outlet>
-<hr>
-<!--<div>-->
-<!--  <p class="intro">prvi p</p>-->
-<!--  <p class="bg-info">drugi p</p>-->
-<!--  <a>ankor</a>-->
-<!--</div>-->
+<!--  <jhi-footer></jhi-footer>-->
+</div>

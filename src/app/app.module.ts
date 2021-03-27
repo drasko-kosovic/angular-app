@@ -15,6 +15,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {StudentModule} from './student/student.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {NavbarComponent} from './layouts/navbar/navbar.component';
 
 
 
@@ -22,7 +23,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent
   ],
     imports: [
         BrowserModule,
