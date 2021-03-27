@@ -1,6 +1,5 @@
 import {Injectable, NgModule} from '@angular/core';
 import {ActivatedRouteSnapshot, Resolve, Router, RouterModule, Routes} from '@angular/router';
-import {StudentListComponent} from './student-list.component';
 import {IStudent, Student} from '../shared/model/student.model';
 import {StudentService} from './student.service';
 import {EMPTY, Observable, of} from 'rxjs';
@@ -8,6 +7,7 @@ import {flatMap} from 'rxjs/internal/operators';
 import {HttpResponse} from '@angular/common/http';
 import {StudentUpdateComponent} from './student-update.component';
 import {StudentDetailComponent} from './student-detail.component';
+import {StudentComponent} from './student.component';
 
 
 @Injectable({providedIn: 'root'})
@@ -37,7 +37,11 @@ export class StudentResolve implements Resolve<IStudent> {
 const routes: Routes = [
   {
     path: '',
-    component: StudentListComponent
+    component: StudentComponent,
+      data: {
+      defaultSort: 'id,asc',
+      pageTitle: 'jhipsterApp.student.home.title',
+    },
   },
   {
     path: 'new',
