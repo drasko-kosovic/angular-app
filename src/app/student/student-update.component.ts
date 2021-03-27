@@ -7,10 +7,11 @@ import { Observable } from 'rxjs';
 
 
 import { StudentService } from './student.service';
-import {IStudent, Student} from "../shared/model/student.model";
+import {IStudent, Student} from '../shared/model/student.model';
+
 
 @Component({
-  selector: 'jhi-student-update',
+  selector: 'app-student-update',
   templateUrl: './student-update.component.html',
 })
 export class StudentUpdateComponent implements OnInit {
@@ -53,7 +54,9 @@ export class StudentUpdateComponent implements OnInit {
   private createFromForm(): IStudent {
     return {
       ...new Student(),
+      // tslint:disable-next-line:no-non-null-assertion
       id: this.editForm.get(['id'])!.value,
+      // tslint:disable-next-line:no-non-null-assertion
       ime: this.editForm.get(['ime'])!.value,
     };
   }
