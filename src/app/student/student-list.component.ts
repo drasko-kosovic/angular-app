@@ -1,10 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {StudentService} from '../student.service';
+import {StudentService} from './student.service';
 import {HttpHeaders, HttpResponse} from '@angular/common/http';
-import {IStudent} from '../../shared/model/student.model';
-import {ITEMS_PER_PAGE} from '../../shared/constants/pagination.constants';
-import {StudentDeleteDialogComponent} from "../student-delete-dialog.component";
+import {IStudent} from '../shared/model/student.model';
+import {ITEMS_PER_PAGE} from '../shared/constants/pagination.constants';
+
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import {StudentDeleteDialogComponent} from './student-delete-dialog.component';
 
 
 @Component({
@@ -70,6 +71,7 @@ export class StudentListComponent implements OnInit {
   }
   trackId(index: number, item: IStudent): number {
     // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+    // tslint:disable-next-line:no-non-null-assertion
     return item.id!;
   }
   delete(student: IStudent): void {

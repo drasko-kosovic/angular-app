@@ -2,21 +2,21 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 
 import {StudentRoutingModule} from './student-routing.module';
-import {StudentListComponent} from './student-list/student-list.component';
-import {StudentDetailComponent} from './student-detail/student-detail.component';
-import {HttpClientModule} from "@angular/common/http";
-import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
-import {StudentDeleteDialogComponent} from "./student-delete-dialog.component";
-import {NgJhipsterModule} from "ng-jhipster";
-import {NgbPaginationModule} from "@ng-bootstrap/ng-bootstrap";
-import {StudentUpdateComponent} from "./student-update.component";
-import {ReactiveFormsModule} from "@angular/forms";
+import {StudentListComponent} from './student-list.component';
+import {HttpClientModule} from '@angular/common/http';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {StudentDeleteDialogComponent} from './student-delete-dialog.component';
+import {NgJhipsterModule} from 'ng-jhipster';
+import {NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
+import {StudentUpdateComponent} from './student-update.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {StudentDetailComponent} from './student-detail.component';
 
 
 @NgModule({
-  declarations: [StudentListComponent, StudentDetailComponent,StudentDeleteDialogComponent,StudentUpdateComponent],
+  declarations: [StudentListComponent, StudentDeleteDialogComponent, StudentUpdateComponent,StudentDetailComponent],
   exports: [
-    StudentListComponent,StudentDetailComponent
+    StudentListComponent
   ],
   imports: [
     CommonModule,

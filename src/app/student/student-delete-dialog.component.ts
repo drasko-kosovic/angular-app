@@ -3,7 +3,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { JhiEventManager } from 'ng-jhipster';
 
 import { StudentService } from './student.service';
-import {IStudent} from "../shared/model/student.model";
+import {IStudent} from '../shared/model/student.model';
 
 @Component({
   templateUrl: './student-delete-dialog.component.html',

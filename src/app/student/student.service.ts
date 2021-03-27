@@ -4,6 +4,7 @@ import {HttpClient, HttpResponse} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {IStudent} from '../shared/model/student.model';
 import {createRequestOption} from '../shared/util/request-util';
+
 type EntityResponseType = HttpResponse<IStudent>;
 type EntityArrayResponseType = HttpResponse<IStudent[]>;
 
