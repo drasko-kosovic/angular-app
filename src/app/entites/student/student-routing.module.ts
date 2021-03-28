@@ -1,6 +1,6 @@
 import {Injectable, NgModule} from '@angular/core';
 import {ActivatedRouteSnapshot, Resolve, Router, RouterModule, Routes} from '@angular/router';
-import {IStudent, Student} from '../shared/model/student.model';
+import {IStudent, Student} from '../../shared/model/student.model';
 import {StudentService} from './student.service';
 import {EMPTY, Observable, of} from 'rxjs';
 import {flatMap} from 'rxjs/internal/operators';

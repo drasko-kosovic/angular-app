@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 
 
 import { StudentService } from './student.service';
-import {IStudent, Student} from '../shared/model/student.model';
+import {IStudent, Student} from '../../shared/model/student.model';
 
 
 @Component({

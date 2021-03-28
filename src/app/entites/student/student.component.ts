@@ -7,8 +7,8 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { StudentService } from './student.service';
 import { StudentDeleteDialogComponent } from './student-delete-dialog.component';
-import {IStudent} from '../shared/model/student.model';
-import {ITEMS_PER_PAGE} from '../shared/constants/pagination.constants';
+import {IStudent} from '../../shared/model/student.model';
+import {ITEMS_PER_PAGE} from '../../shared/constants/pagination.constants';
 
 @Component({
   selector: 'app-student',

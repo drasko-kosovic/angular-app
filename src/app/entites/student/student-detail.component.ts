@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {IStudent} from '../shared/model/student.model';
+import {IStudent} from '../../shared/model/student.model';
 
 
 

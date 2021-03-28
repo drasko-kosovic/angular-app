@@ -21,11 +21,11 @@
   <div class="table-responsive" id="entities" *ngIf="students && students.length > 0">
     <table class="table table-striped" aria-describedby="page-heading">
       <thead>
-      <!--      <tr jhiSort >-->
-      <!--        <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>-->
-      <!--        <th scope="col"  jhiSortBy="ime"><span jhiTranslate="jhipsterApp.student.ime">Ime</span> <fa-icon icon="sort"></fa-icon></th>-->
-      <!--        <th scope="col"></th>-->
-      <!--      </tr>-->
+            <tr jhiSort >
+              <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> </th>
+              <th scope="col"  jhiSortBy="ime"><span jhiTranslate="jhipsterApp.student.ime">Ime</span> </th>
+              <th scope="col"></th>
+            </tr>
       </thead>
       <tbody>
       <tr *ngFor="let student of students ;trackBy: trackId">

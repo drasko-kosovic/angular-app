@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import {SERVER_API_URL} from '../app.constants';
+import {SERVER_API_URL} from '../../app.constants';
 import {HttpClient, HttpResponse} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {IStudent} from '../shared/model/student.model';
-import {createRequestOption} from '../shared/util/request-util';
+import {IStudent} from '../../shared/model/student.model';
+import {createRequestOption} from '../../shared/util/request-util';
 
 type EntityResponseType = HttpResponse<IStudent>;
 type EntityArrayResponseType = HttpResponse<IStudent[]>;
