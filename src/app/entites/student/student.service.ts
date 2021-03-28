@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {SERVER_API_URL} from '../../app.constants';
+import {SERVER_API_URL, SERVER_API_URL_80} from '../../app.constants';
 import {HttpClient, HttpResponse} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {IStudent} from '../../shared/model/student.model';
@@ -13,7 +13,8 @@ type EntityArrayResponseType = HttpResponse<IStudent[]>;
 })
 export class StudentService {
 
-  public resourceUrl = SERVER_API_URL + 'api/students';
+  public resourceUrl = SERVER_API_URL + 'api/students'
+  // public resourceUrl = SERVER_API_URL_80 + 'api/students';
 
   constructor(protected http: HttpClient) { }
 

@@ -30,7 +30,9 @@ export class StudentComponent implements OnInit, OnDestroy {
     protected router: Router,
     protected eventManager: JhiEventManager,
     protected modalService: NgbModal
-  ) {}
+  ) {
+    this.activatedRoute.params.subscribe(params=>console.log(params));
+  }
 
   loadPage(page?: number, dontNavigate?: boolean): void {
     const pageToLoad: number = page || this.page || 1;

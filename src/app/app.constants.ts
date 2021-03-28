@@ -4,3 +4,4 @@
 
 
 export const SERVER_API_URL = 'http://localhost:8181/';
+export const SERVER_API_URL_80 = 'http://localhost:8080/';

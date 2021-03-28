@@ -10,11 +10,15 @@ import {IStudent} from '../../shared/model/student.model';
 })
 export class StudentDetailComponent implements OnInit {
   student: IStudent | null = null;
+  id:string;
 
-  constructor(protected activatedRoute: ActivatedRoute) {}
+  constructor(protected activatedRoute: ActivatedRoute) {
+    this.activatedRoute.params.subscribe(params=>console.log(params));
+  }
 
   ngOnInit(): void {
-    this.activatedRoute.data.subscribe(({ student }) => (this.student = student));
+    this.activatedRoute.data.subscribe(({ student }) => (this.student = student))
+    this.activatedRoute.data.subscribe(({ student }) => (this.id = student));
   }
 
   previousState(): void {
